@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(143, 148, 148);
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: px;
+
+        }
+        main{
+            background-color: rgb(254, 255, 255);
+            padding: 10px;
+       
+            margin-top: 10px;
+            
+        }
+        article{
+            color: rgb(7, 7, 7);
+            background-color: lightgrey;
+        }
+        article > aside {
+            color: rgb(15, 15, 15);
+            background-color: rgb(165, 152, 152);
+            margin-right: 350px;
+        }
+      
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin-top: 20px;
+
+        }
+        nav{
+            background-color: rgb(88, 87, 87);
+            padding: 5px;
+            margin-right: 30px;
+        }
+        nav > a {
+            text-decoration: none;
+            padding-right: 30px;
+            color: aliceblue;
+            font-weight: bolder;
+            
+
+
+        }
+        h1{
+            text-align: center;
+        }
+        nav > a :hover{
+            text-decoration: underline;
+        
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu lindo site novo</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticícias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus officiis vitae dolorem obcaecati aperiam voluptatum asperiores consectetur nobis esse saepe sint commodi dolores facere magni non porro, reiciendis aut.</p>
+                <aside>
+                    <p>Artigo escrito por Leilson fernandes</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        Desenvolved By Lenilson fernandes da costa
+    </footer>
+</body>
+</html>

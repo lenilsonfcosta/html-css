@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens dinâmicas">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML</p>
+    <audio src="midias/Strollin' - TrackTribe (1).mp3" controls autoplay></audio>
+    <audio  preload="metadata" autoplay controls loop>
+        <source src="midias/Running Errands - TrackTribe.mp3" type="audio/mp3">
+        <source src="midias/Strollin' - TrackTribe.mp3" type="audio/ogg">
+        <p>infelismente seu navegador não consegue reproduzir o áudio. <a href="midias/Strollin' - TrackTribe (1).mp3">clique aqui para baixar o arquivo</a></p>
+ 
+    </audio>
+
+    
+
+</body>
+</html>
