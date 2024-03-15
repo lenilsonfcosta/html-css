@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n) {
+
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        thead,tfoot{
+            background-color: gray;
+            padding: 10px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+                TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA =  dado de tabela
+    -->
+    <table>
+        <caption>População das unidades federativas</caption> <!--Caption (Legenda)-->
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 100px;">população</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238	</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626	</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+
+            <tr>
+                <td>pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238	</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626	</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+
+            <tr>
+                <td>pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td class="num">210.147.257</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nostrum tenetur enim perspiciatis ex, reprehenderit modi alias nisi vero sed eveniet quis. Illo provident explicabo mollitia necessitatibus, ipsa eius nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae adipisci ab minus quos quia alias tempore, perferendis atque pariatur incidunt nemo expedita qui quidem exercitationem neque. Blanditiis, mollitia aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis est minus quisquam consectetur sapiente ducimus excepturi, mollitia minima, asperiores nisi unde reiciendis ullam non! Deleniti sit consectetur tempora modi error.lore</p>
+ 
+</body>
+</html>
